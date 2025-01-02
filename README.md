@@ -1,49 +1,49 @@
-#  Speech Pilot App
+# Speech Pilot App
 
-## وصف التطبيق:
+## Description:
 
-هذا التطبيق يجمع بين قوتين في عالم الصوتيات: **تحويل النصوص إلى بيانات صوتية (BLOB)** وإمكانية **تجربة وتشغيل هذه الأصوات** مباشرة من قواعد بيانات SQLite. سواء كنت مطورًا تحتاج إلى إنشاء ملفات صوتية ديناميكية أو مستخدمًا يرغب في استكشاف محتوى صوتي مخزن، فإن هذا التطبيق يقدم لك الأدوات اللازمة.
+This application combines two powerful functionalities in the world of audio: **converting text to audio data (BLOB)** and the ability to **test and play these sounds** directly from SQLite databases. Whether you're a developer needing to create dynamic audio files or a user wanting to explore stored audio content, this application provides you with the necessary tools.
 
-**الوظائف الرئيسية:**
+**Key Features:**
 
-*   **تحويل النص إلى صوت BLOB:**
-    *   اختر قاعدة بيانات SQLite والجدول الذي يحتوي على النصوص المراد تحويلها.
-    *   حدد عمود النص المصدر وعمود الوجهة لتخزين بيانات الصوت (BLOB).
-    *   استخدم قوة مكتبة `gTTS` لتحويل النصوص إلى ملفات صوتية عالية الجودة.
-    *   شاهد عملية التحويل مباشرة من خلال شريط التقدم المدمج.
+*   **Text to Speech BLOB Conversion:**
+    *   Select an SQLite database and the table containing the text to be converted.
+    *   Specify the source text column and the destination column for storing the audio data (BLOB).
+    *   Utilize the power of the `gTTS` library to convert text into high-quality audio files.
+    *   Monitor the conversion process directly through the integrated progress bar.
 
-*   **تشغيل وتجربة الأصوات الديناميكية:**
-    *   اتصل بقواعد بيانات SQLite واستعرض الجداول التي تحتوي على بيانات صوتية (BLOB).
-    *   حدد الأعمدة التي تحتوي على بيانات وصفية (مثل العنوان أو الوصف) بالإضافة إلى عمود الصوت (BLOB).
-    *   اعرض البيانات الصوتية جنبًا إلى جنب مع معلوماتها الوصفية.
-    *   قم بتشغيل الأصوات المخزنة مباشرة بنقرة زر، بفضل تكامل مكتبة `pygame`.
+*   **Dynamic Audio Playback and Testing:**
+    *   Connect to SQLite databases and browse tables containing audio data (BLOB).
+    *   Select the columns containing descriptive data (such as title or description) in addition to the audio column (BLOB).
+    *   View the audio data alongside its descriptive information.
+    *   Play stored sounds directly with a button click, thanks to the integration of the `pygame` library.
 
-**كيف يعمل التطبيق؟**
+**How the App Works:**
 
-1. **التحويل:** يقوم التطبيق بقراءة النصوص من قاعدة البيانات، وتحويلها إلى بيانات صوتية باستخدام `gTTS`، ثم يخزن هذه البيانات كـ BLOB في الجدول الذي تحدده.
-2. **التجربة:** يتيح لك التطبيق استعراض البيانات الصوتية المخزنة في قاعدة البيانات وتشغيلها مباشرة، مما يمكنك من التحقق من جودة الأصوات المنتجة أو استكشاف المحتوى الصوتي الموجود.
+1. **Conversion:** The application reads text from the database, converts it to audio data using `gTTS`, and then stores this data as a BLOB in the table you specify.
+2. **Testing:** The application allows you to browse the audio data stored in the database and play it directly, enabling you to verify the quality of the generated sounds or explore existing audio content.
 
-**ابدأ الآن!**
+**Get Started Now!**
 
-[أضف هنا قسم "كيفية البدء" المفصل الذي ذكرته في الإجابة السابقة، مع خطوات التثبيت والتشغيل.]
+[Add here the detailed "Getting Started" section you mentioned previously, with installation and running steps.]
 
-**التقنيات المستخدمة:**
+**Built With:**
 
-[أضف هنا قسم "التقنيات المستخدمة" الذي ذكرته في الإجابة السابقة.]
+[Add here the "Built With" section you mentioned previously.]
 
-**المساهمة:**
+**Contributing:**
 
-[أضف هنا قسم "المساهمة" الذي ذكرته في الإجابة السابقة.]
+[Add here the "Contributing" section you mentioned previously.]
 
-**الترخيص:**
+**License:**
 
-[أضف هنا قسم "الترخيص" الذي ذكرته في الإجابة السابقة.]
+[Add here the "License" section you mentioned previously.]
 
-**مثال على جزء من قسم "كيفية البدء":**
+**Example of a portion of the "Getting Started" section:**
 
 ```markdown
-## كيفية البدء:
+## Getting Started:
 
-1. **تأكد من تثبيت Python والمتطلبات:**
+1. **Ensure Python and Requirements are Installed:**
    ```bash
    pip install tkinter ttkbootstrap pygame gTTS
