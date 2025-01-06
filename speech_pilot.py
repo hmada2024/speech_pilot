@@ -16,12 +16,12 @@ class CombinedApp(tk.Tk):
         self.notebook.pack(pady=10, expand=True, fill="both")
 
         self.dynamic_audio_tab = ttk.Frame(self.notebook)
-        self.notebook.add(self.dynamic_audio_tاab, text="تطبيق الصوتيات الديناميكي")
+        self.notebook.add(self.dynamic_audio_tab, text="تطبيق الصوتيات الديناميكي")  # تم التصحيح هنا
         self.create_dynamic_audio_ui(self.dynamic_audio_tab)
 
         self.audio_converter_tab = ttk.Frame(self.notebook)
         self.notebook.add(self.audio_converter_tab, text="محول النص إلى صوت")
-        self.create_augdio_converter_ui(self.audio_converter_tab)
+        self.create_audio_converter_ui(self.audio_converter_tab)
 
         # تهيئة pygame مرة واحدة فقط
         pygame.mixer.init()
